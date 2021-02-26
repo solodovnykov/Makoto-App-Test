@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6748e928.chunk.css",
+    "main.js": "/static/js/main.8da3b56a.chunk.js",
+    "main.js.map": "/static/js/main.8da3b56a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.decdc3d7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.decdc3d7.js.map",
+    "static/css/2.679831fc.chunk.css": "/static/css/2.679831fc.chunk.css",
+    "static/js/2.4616e65c.chunk.js": "/static/js/2.4616e65c.chunk.js",
+    "static/js/2.4616e65c.chunk.js.map": "/static/js/2.4616e65c.chunk.js.map",
+    "static/js/3.da646dc5.chunk.js": "/static/js/3.da646dc5.chunk.js",
+    "static/js/3.da646dc5.chunk.js.map": "/static/js/3.da646dc5.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.679831fc.chunk.css.map": "/static/css/2.679831fc.chunk.css.map",
+    "static/css/main.6748e928.chunk.css.map": "/static/css/main.6748e928.chunk.css.map",
+    "static/js/2.4616e65c.chunk.js.LICENSE.txt": "/static/js/2.4616e65c.chunk.js.LICENSE.txt",
+    "static/media/Post.css": "/static/media/PostBg1.bd533372.webp",
+    "static/media/Posts.css": "/static/media/ArrowIconGray.d1fe0b73.svg",
+    "static/media/BorneoBg.054e4862.webp": "/static/media/BorneoBg.054e4862.webp",
+    "static/media/Footer.css": "/static/media/VkFooterIcon.db0b25ce.svg",
+    "static/media/MainText.css": "/static/media/DiscordIconMini.c3518179.svg",
+    "static/media/Donate.cda73393.svg": "/static/media/Donate.cda73393.svg",
+    "static/media/App.css": "/static/media/HomeBg.12c11064.webp",
+    "static/media/OurServers.950dd0bb.svg": "/static/media/OurServers.950dd0bb.svg",
+    "static/media/index.css": "/static/media/Whitney-Semibold.1070fecc.ttf",
+    "static/media/UpdatesIcon.68cc1586.svg": "/static/media/UpdatesIcon.68cc1586.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.decdc3d7.js",
+    "static/css/2.679831fc.chunk.css",
+    "static/js/2.4616e65c.chunk.js",
+    "static/css/main.6748e928.chunk.css",
+    "static/js/main.8da3b56a.chunk.js"
+  ]
+}

@@ -1,0 +1,249 @@
+.our-servers {
+  margin-top: 60px;
+}
+
+/* .server-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+} */
+
+.server-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(510px, 1fr));
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-bottom: 100px;
+}
+
+.server-card {
+  max-width: 790px;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 20px 70px 50px 90px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.server-card div {
+  position: relative;
+  z-index: 200;
+}
+
+.server-card::before {
+  content: '';
+  background: rgba(19, 22, 36, 0.45);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  backdrop-filter: blur(5px);
+}
+
+.server-card::after {
+  content: '';
+  width: 100%;
+  height: 99.7%;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  z-index: 103;
+}
+
+.server-card-header {
+  width: 100%;
+}
+
+.server-card-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.server-card-title-text {
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.server-card-online {
+  font-weight: 600;
+  font-size: 10px;
+  color: #83889E;
+}
+
+.server-card-game-mode {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.server-card-title-text span {
+  margin-left: 10px;
+}
+
+.server-card-body {
+  margin-top: 40px;
+}
+
+.server-card-body p {
+  font-weight: 325;
+  font-size: 16px;
+  margin: 0 0 65px 0;
+  padding-right: 30px;
+  box-sizing: border-box;
+  line-height: 21px;
+}
+
+.server-card-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute !important;
+  left: 0;
+  bottom: 45px;
+  padding: 0 70px 0 90px;
+  box-sizing: border-box;
+}
+
+.server-card-link {
+  font-weight: 600;
+  font-size: 10px;
+  color: #83889E;
+}
+
+.server-card-flag-makoto {
+  width: 40px;
+  height: 198px;
+  background-image: url('../../images/FlagGreen.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute !important;
+  top: 0;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.server-card-flag-borneo {
+  width: 40px;
+  height: 198px;
+  background-image: url('../../images/FlagPurple.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute !important;
+  top: 0;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.server-card-flag-makoto p {
+  transform: rotate(-90deg);
+  font-weight: 600;
+  font-size: 22px;
+  margin: -20px 0 0 0;
+  color: #4AD849;
+}
+
+.server-card-flag-borneo p {
+  transform: rotate(-90deg);
+  font-weight: 600;
+  font-size: 22px;
+  margin: -20px 0 0 0;
+  color: #DAA4FC;
+}
+
+/* .server-card:first-child {
+  margin-right: 10px;
+}
+
+.server-card:last-child {
+  margin-left: 10px;
+} */
+
+.server-card-ip {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+  position: relative;
+}
+
+.server-card-ip::before {
+  content: 'НАЖМИТЕ, ЧТОБЫ СКОПИРОВАТЬ';
+  position: absolute;
+  right: 0;
+  top: -14px;
+  font-weight: 600;
+  font-size: 10px;
+  color: #83889E;
+}
+
+@media (max-width: 991.98px) {
+  .server-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .server-card {
+    padding: 20px 30px 70px 65px;
+  }
+  .server-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 30px 0 65px;
+  }
+  .server-card-ip {
+    margin-top: 30px;
+    padding: 0;
+  }
+  .server-card-ip::before {
+    left: 0;
+    right: auto;
+  }
+  .server-card-flag-makoto, .server-card-flag-borneo {
+    left: 10px;
+  }
+  .server-card-body p {
+    padding-right: 0;
+  }
+  .server-card-title-text span {
+    margin-left: 5px;
+  }
+  .server-card-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .server-card-online {
+    margin-top: 5px;
+  }
+  .server-card-game-mode {
+    margin-top: 8px;
+  }
+}
