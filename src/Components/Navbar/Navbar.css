@@ -13,13 +13,13 @@
   justify-content: center;
   align-items: center;
   background: #131624;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .logo {
   width: 24px;
   height: 24px;
-  background-image: url('../../images/MakotoLogo.png');
+  background-image: url("../../images/MakotoLogo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,13 +29,13 @@
 }
 
 .logo::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
   top: -5px;
   left: -5px;
-  border: 5px solid rgba(19, 22, 36, .6);
+  border: 5px solid rgba(19, 22, 36, 0.6);
   z-index: 101;
 }
 
@@ -46,7 +46,7 @@
   justify-content: space-between;
   max-width: 800px;
   width: 100%;
-  transition: .2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .navbar-item {
@@ -71,13 +71,13 @@
   font-size: 18px;
   font-weight: 700;
   background: var(--blue-color);
-  border-left: .25px solid #A3C2F0;
-  border-top: .25px solid #A3C2F0;
-  border-right: .25px solid #A3C2F0;
+  border-left: 0.25px solid #a3c2f0;
+  border-top: 0.25px solid #a3c2f0;
+  border-right: 0.25px solid #a3c2f0;
   padding: 12px 50px;
   position: relative;
   z-index: 200;
-  box-shadow: inset 0 -2.5px 0 #24487E;
+  box-shadow: inset 0 -2.5px 0 #24487e;
 }
 
 .navbar-main-button::before {
@@ -85,9 +85,9 @@
   top: -5px;
   width: 100%;
   height: 100%;
-  content: '';
+  content: "";
   position: absolute;
-  border: 5px solid rgba(19, 22, 36, .6);
+  border: 5px solid rgba(19, 22, 36, 0.6);
   z-index: 101;
 }
 
@@ -104,7 +104,7 @@
 }
 
 .discord-icon {
-  background-image: url('../../images/DiscordIcon.png');
+  background-image: url("../../images/DiscordIcon.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -112,7 +112,7 @@
 }
 
 .vk-icon {
-  background-image: url('../../images/VkIcon.png');
+  background-image: url("../../images/VkIcon.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -120,15 +120,15 @@
 }
 
 .navbar-link-active {
-  color: #3687FF;
+  color: #3687ff;
   position: relative;
 }
 
 .navbar-link-active::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 2px;
-  background: #3687FF;
+  background: #3687ff;
   position: absolute;
   bottom: -9px;
   left: 0;
@@ -140,7 +140,7 @@
     position: fixed;
     top: 0;
     left: -300px;
-    background: rgba(19, 23, 40, .9);
+    background: rgba(19, 23, 40, 0.9);
     max-width: 300px;
     width: 100%;
     height: 100%;
@@ -151,6 +151,28 @@
     backdrop-filter: blur(20px);
     border-right: 1px solid rgba(255, 255, 255, 0.25);
     overflow-y: scroll;
+  }
+  .navbar-main::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background: transparent;
+    width: 10px;
+    background: #1b2032;
+  }
+
+  .navbar-main::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .navbar-main::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(126, 135, 139, 0.6);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .navbar-main::-webkit-scrollbar-thumb:hover {
+    background: #4a5158;
+    transition: all 0.2s ease-in-out;
   }
   .navbar-main-button {
     display: none;
@@ -171,7 +193,7 @@
     position: relative;
   }
   .navbar-burger::before {
-    content: '';
+    content: "";
     background: #fff;
     width: 100%;
     height: 4px;
@@ -180,7 +202,7 @@
     left: 0;
   }
   .navbar-burger::after {
-    content: '';
+    content: "";
     background: #fff;
     width: 100%;
     height: 4px;
@@ -196,29 +218,29 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    transition: .1s all ease-in-out;
+    transition: 0.1s all ease-in-out;
   }
   .navbar-main-button-mob {
     color: var(--font-main-color);
     font-size: 18px;
     font-weight: 700;
     background: var(--blue-color);
-    border-left: .25px solid #A3C2F0;
-    border-top: .25px solid #A3C2F0;
-    border-right: .25px solid #A3C2F0;
+    border-left: 0.25px solid #a3c2f0;
+    border-top: 0.25px solid #a3c2f0;
+    border-right: 0.25px solid #a3c2f0;
     padding: 12px 50px;
     position: relative;
     z-index: 200;
-    box-shadow: inset 0 -2.5px 0 #24487E;
+    box-shadow: inset 0 -2.5px 0 #24487e;
   }
   .navbar-main-button-mob::before {
     left: -5px;
     top: -5px;
     width: 100%;
     height: 100%;
-    content: '';
+    content: "";
     position: absolute;
-    border: 5px solid rgba(19, 22, 36, .6);
+    border: 5px solid rgba(19, 22, 36, 0.6);
     z-index: 101;
   }
   .logo {
@@ -241,20 +263,20 @@
   .navbar-burger.burger-active::before {
     transform: rotate(45deg) translateY(-2px);
     transform-origin: top;
-    transition: .2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
     top: 50%;
   }
   .navbar-burger.burger-active::after {
     transform: rotate(-45deg) translateY(2px);
     transform-origin: bottom;
-    transition: .2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
     bottom: 50%;
   }
   .navbar-burger::before {
-    transition: .2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
   }
   .navbar-burger::after {
-    transition: .2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
   }
   /* .navbar {
     position: fixed;
@@ -285,19 +307,22 @@
     margin-top: 0;
     background: transparent;
     z-index: 205;
-    transition: .2s background ease;
+    transition: 0.2s background ease;
   }
   .navbar-wrapper.active {
-    background: rgba(19, 23, 40, .6);
+    background: rgba(19, 23, 40, 0.6);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
-    transition: .2s background ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    transition: 0.2s background ease;
   }
 }
 
 @media (min-width: 1199.98px) {
-  .navbar-main-button-mob, .navbar-burger, .navbar-menu-logo, .navbar-networks-menu {
+  .navbar-main-button-mob,
+  .navbar-burger,
+  .navbar-menu-logo,
+  .navbar-networks-menu {
     display: none;
   }
 }
